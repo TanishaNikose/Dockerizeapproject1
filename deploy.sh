@@ -11,6 +11,6 @@ echo "building new image..."
 docker build -t myapp:latest .
 
 echo "starting container..."
-docker run -d -p 80:5000 --name myapp:latest
+docker run -d -p 80:5000 --name myapp myapp:latest
 
 echo "Deployment Successfull"
